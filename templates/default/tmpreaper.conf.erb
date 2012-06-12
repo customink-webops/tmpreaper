@@ -10,7 +10,7 @@
 # having tmpreaper run automatically;
 # see /usr/share/doc/tmpreaper/README.security.gz
 
-#SHOWWARNING=true
+SHOWWARNING=<%= @show_warning %>
 
 # TMPREAPER_TIME
 #       is the max. age of files before they're removed.
@@ -43,7 +43,8 @@
 # uncomment and change the next line to overrule the /etc/default/rcS value
 # TMPREAPER_TIME=7d
 
-TMPREAPER_PROTECT_EXTRA=''
-TMPREAPER_DIRS='/tmp/.'
-TMPREAPER_DELAY='256'
-TMPREAPER_ADDITIONALOPTIONS=''
+TMPREAPER_PROTECT_EXTRA='<%= @protect_extra %>'
+TMPREAPER_DIRS='<%= @dirs %>'
+TMPREAPER_DELAY='<%= @delay %>'
+TMPREAPER_ADDITIONALOPTIONS='<%= @additional_options %>'
+

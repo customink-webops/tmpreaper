@@ -1,0 +1,7 @@
+CHANGELOG.md
+.travis.yml
+.gitignore
+tmp
+Gemfile
+Gemfile.lock
+Rakefile

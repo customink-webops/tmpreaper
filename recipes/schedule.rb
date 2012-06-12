@@ -17,18 +17,8 @@
 # limitations under the License.
 #
 
-package 'tmpreaper'
-
-template '/etc/tmpreaper.conf' do
-  owner 'root'
-  group 'root'
-  mode  '0644'
-
-  variables(
-    :show_warning => node['tmpreaper']['show_warning'],
-    :protect_extra => node['tmpreaper']['protect_extra'],
-    :dirs => [node['tmpreaper']['dirs']].flatten.join(' '),
-    :delay => node['tmpreaper']['delay'],
-    :additional_options => node['tmpreaper']['additional_options']
-  )
+cron "tmpreaper" do
+  hour    node['tmpreaper']['cron']['hour']
+  minute  node['tmpreaper']['cron']['minute']
+  command "/usr/sbin/tmpreaper"
 end
