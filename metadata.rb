@@ -3,7 +3,7 @@ maintainer_email "svargo@customink.com"
 license          "All rights reserved"
 description      "Installs/Configures tmpreaper"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.1.2"
+version          "0.1.3"
 
 recipe "tmpreaper", "Main tmpreaper configuration"
 recipe "tmpreaper::schedule", "Adds cron job for tmpreaper"
@@ -37,6 +37,10 @@ attribute "delay",
 attribute "additional_options",
   :display_name => "Additional Options",
   :default => ""
+
+attribute "tmptime",
+  :display_name => "How old files to clean",
+  :default => nil
 
 attribute "cron[hour]",
   :display_name => "Cron Time (hour)",

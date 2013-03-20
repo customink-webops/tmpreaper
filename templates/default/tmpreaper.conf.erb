@@ -47,4 +47,6 @@ TMPREAPER_PROTECT_EXTRA='<%= @protect_extra %>'
 TMPREAPER_DIRS='<%= @dirs %>'
 TMPREAPER_DELAY='<%= @delay %>'
 TMPREAPER_ADDITIONALOPTIONS='<%= @additional_options %>'
-
+<% if @tmptime %>
+TMPREAPER_TIME='<%= @tmptime %>'
+<% end %>
