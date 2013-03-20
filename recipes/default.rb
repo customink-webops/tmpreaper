@@ -29,6 +29,7 @@ template '/etc/tmpreaper.conf' do
     :protect_extra => node['tmpreaper']['protect_extra'],
     :dirs => [node['tmpreaper']['dirs']].flatten.join(' '),
     :delay => node['tmpreaper']['delay'],
-    :additional_options => node['tmpreaper']['additional_options']
+    :additional_options => node['tmpreaper']['additional_options'],
+    :tmptime => node['tmpreaper']['tmptime']
   )
 end
