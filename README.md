@@ -22,6 +22,7 @@ Attributes
 * `default['tmpreaper']['dirs']` - directory or directories to clean
 * `default['tmpreaper']['delay']` - maximum delay before starting processing
 * `default['tmpreaper']['additional_options']` - additional options for tmpreaper
+* `default['tmpreaper']['tmptime']` - how old are files to delete (e.g.`1d`)
 
 ## cron
 * `default['tmpreaper']['cron']['hour']` = hour to run the cron task
