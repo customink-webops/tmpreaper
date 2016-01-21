@@ -1,11 +1,9 @@
-[![Build Status](https://secure.travis-ci.org/customink-webops/chef-tmpreaper.png?branch=0.1.1)](http://travis-ci.org/customink-webops/chef-tmpreaper)
-
 Description
-===========
+===
 This cookbook install tmpreaper and the associated configuration file for Ubuntu.
 
 Requirements
-============
+===
 ## Cookbooks:
 
 This cookbook doesn't have direct dependencies on other cookbooks.
@@ -14,7 +12,7 @@ This cookbook doesn't have direct dependencies on other cookbooks.
 * Ubuntu OS
 
 Attributes
-==========
+===
 
 ## tmpreaper
 * `default['tmpreaper']['show_warning']` - show a warning before running
@@ -29,7 +27,7 @@ Attributes
 * `default['tmpreaper']['cron']['minute']` - minute to run the cron task
 
 Recipes
-=======
+===
 
 To install just tmpreaper (and run the cleaning command yourself):
 
@@ -41,7 +39,7 @@ To install tmpreaper and a cronjob:
     tmpreaper::schedule
 
 License and Authors
-===================
+===
 
 Author:: Seth Vargo <svargo@customink.com>
 

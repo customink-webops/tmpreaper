@@ -1,5 +1,5 @@
 # default
-default['tmpreaper']['show_warning'] = "false"
+default['tmpreaper']['show_warning'] = 'false'
 default['tmpreaper']['protect_extra'] = ''
 default['tmpreaper']['dirs'] = '/tmp/.'
 default['tmpreaper']['delay'] = '256'
