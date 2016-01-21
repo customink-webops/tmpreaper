@@ -17,8 +17,8 @@
 # limitations under the License.
 #
 
-cron "tmpreaper" do
+cron 'tmpreaper' do
   hour    node['tmpreaper']['cron']['hour']
   minute  node['tmpreaper']['cron']['minute']
-  command "/usr/sbin/tmpreaper"
+  command '/usr/sbin/tmpreaper'
 end
